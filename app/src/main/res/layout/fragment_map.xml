@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mapFragment">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/eventLayout"
+        android:clickable="false"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4">
+        <ImageView
+            android:id="@+id/eventImage"
+            android:layout_width="400dp"
+            android:layout_height="75dp"
+            android:src="@drawable/ic_droid"
+            android:layout_weight="4"/>
+        <TextView
+            android:id="@+id/eventInfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Click on a Marker to see Event Details"
+            android:textSize="24dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+</LinearLayout>
